@@ -193,7 +193,7 @@ input:checked + .slider:before {
 /*End of Toggle*/
   /*Day N Night cycles */
   body{
-    background-color: rgb(123, 218, 255);
+    background-color: rgb(162, 225, 250);
     color: black;
   }
   .night-mode {
