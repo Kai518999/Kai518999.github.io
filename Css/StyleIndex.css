@@ -1,0 +1,57 @@
+  /*About Us Page*/
+  body{
+    background-color: gray;
+  }
+  .W, .LOGO{
+    text-align: center;
+  
+  }
+  a{
+    text-decoration: none;
+    color: blue;
+    font-size: large;
+  }
+.ABW{
+    text-decoration: none;
+    color: blue;
+    font-size: x-large;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    left: 50px;
+    top: 275px;
+}
+.DBW{
+  text-decoration: none;
+  color: blue;
+  font-size: x-large;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  left: 350px;
+  top: 275px;
+}
+.BBW{
+  text-decoration: none;
+  color: blue;
+  font-size: x-large;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  left: 650px;
+  top: 275px;
+}
+.Text
+{
+  text-align: center;
+  align-items: center;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 30px;
+}
+

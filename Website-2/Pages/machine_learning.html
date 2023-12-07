@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/StyleNav2.css">
+    <link rel="stylesheet" href="../Css/StyleML.css">
+</head>
+<body>
+  <header class="header">
+    <a href="../../Index.html"><img src="../Images/AI Vs Devs.PNG" alt=""></a>
+    
+    <nav class="navbar">
+      <ul>
+        <li><a href="Index2.html">Website 2</a></li>
+        <li><a href="#">AI Pages &#9660;</a>
+        <ul>
+          <li class="Nava"><a href="ai_fundamentals.html">AI Fundamentals</a></li>
+          <li class="Nava"><a href="computer_vision.html">Computer Vision</a></li>
+          <li class="Nava"><a href="ai_models.html">How to Create AI Models</a></li>
+          <li class="Nava"><a href="deep_learning.html">Deep Learning</a></li>
+          <li class="Nava"><a href="machine_learning.html">Machine Learning</a></li>
+          <li class="Nava"><a href="nlp.html">Natural Language Processing</a></li>
+        </ul>
+        </li>
+      </ul>
+      <label class="switch">
+        <p class="NToggle">day and Night Toggle</p>
+        <input type="checkbox" onclick="toggleMode()">
+        <span class="slider round" id="a"></span>
+          
+      </label>
+    </nav>
+  </header>
+<div class="content">
+  <h1>Machine Learning</h1><br><br>
+  <h2>what is machine learning</h2>
+  <p>Machine learning is a subfield of Artificial Intelligence which is broadly defined as the capability of machine to imitate intelligent human behavior.
+    Artificial Intelligence systems are used to perform complex tasks in a way that is similar to how humans solve problems which allows for automations.
+    It was defined in the 1959 by AI pioneer Arthur Samuel as "the field of study that gives computers the ability to learn without explicity being programmed."
+    <br><br>
+    There are Four subcatagories of machine learning these are:
+    <br><br><strong style="font-size: large;">Supervised Machine Learning</strong><br> These models are trained with a labeled data set which allows the models to learn and grow more accurate over time.
+    For example an algorithm would be trained with pictures of dogs and other things, all labelled by humans and the machine would learn ways to identify pictures of dogs on its own.Supervised is the most common type used today.
+    <br><br><strong style="font-size: large;">Unsupervised Machine Learning</strong><br> in this section the model looks for patterns in unlabeled data.For example this means if you gave it the data of people buying coats during the whole year.
+    It will then look through the whole data and see that coats generally get bought more closer to the winter seasons of the year. This type of model is mostly used in going through online sales data and identify different types of clients making purchases
+    <br><br><strong style="font-size: large;">Reinforcement Machine Learning</strong><br>The way this model works is through trial and error to take the best action by establishing a reward system. Reinforcement learning can train models to play games or train autonomous vehicles to drive by telling the machine when it made the right decisions,which helps it learn over time what actions it should take.
+    <br><br><strong style="font-size: large;">Semi-Supervised Machine Learning</strong><br>This area takes a different approach than the other two areas by interacting with an environment built by people to learn different optimal behaviours. This model of machine learning works from rewards and penalties.
+  </p>
+  <div class="container">
+    <h1>Image Selection</h1>
+    <div class="image-container">
+        <img src="../Images/cat-1192026_640.jpg" alt="Image 1" data-name="Cat">
+        <img src="../Images/Dog.jpg" alt="Image 2" data-name="Dog">
+        <!-- Add more images here -->
+    </div>
+    <button id="showAnswerBtn" onclick="showAnswer()">Show Answer</button>
+    <div id="answer">
+        <h2>Answer:</h2>
+        <p id="answerText"></p>
+    </div>
+</div>
+<div id="game-container">
+  <h1>Number Guessing mini-game</h1>
+  <p><center>The computer will Think of a number between 1 and 100 This can be decimals.You will need to guess that number. <br> Then computer will output higher or lower and the range of where you need to think towards for the next answer you put.</center></p>
+
+  <div id="game-feedback"></div>
+  <input type="number" id="game-guess" placeholder="Your guess">
+  <button id="game-check">Check</button>
+</div>
+</div>
+
+</body>
+<script src="../JavaScript/scriptML.js"></script>
+<script src="../JavaScript/scriptNav.js"></script>
+</html>

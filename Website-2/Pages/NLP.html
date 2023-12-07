@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/StyleNav2.css">
+    <link rel="stylesheet" href="../Css/StyleNLP.css">
+</head>
+<body>
+  <header class="header">
+    <a href="../../Index.html"><img src="../Images/AI Vs Devs.PNG" alt=""></a>
+    
+    <nav class="navbar">
+      <ul>
+        <li><a href="Index2.html">Website 2</a></li>
+        <li><a href="#">AI Pages &#9660;</a>
+        <ul>
+          <li class="Nava"><a href="ai_fundamentals.html">AI Fundamentals</a></li>
+          <li class="Nava"><a href="computer_vision.html">Computer Vision</a></li>
+          <li class="Nava"><a href="ai_models.html">How to Create AI Models</a></li>
+          <li class="Nava"><a href="deep_learning.html">Deep Learning</a></li>
+          <li class="Nava"><a href="machine_learning.html">Machine Learning</a></li>
+          <li class="Nava"><a href="nlp.html">Natural Language Processing</a></li>
+        </ul>
+        </li>
+      </ul>
+      <label class="switch">
+        <p class="NToggle">day and Night Toggle</p>
+        <input type="checkbox" onclick="toggleMode()">
+        <span class="slider round" id="a"></span>
+          
+      </label>
+    </nav>
+  </header>
+  <div class="content">
+    <h1>Natural Language Processing</h1><br><br>
+    <h2>How does Natural Language Processing work?(NLP)</h2><br>
+    <p>NLP enables the computer to understand what the user has said or written like a normal human would as well.<br> Natural Language Processing is used in Artificial Intelligence to take the real-world inputs,process them and understand them </p>
+    <br>
+    <h2>What is Natural Language Processing used for?</h2><br>
+    <p>Natural Language Processing has been used for multiple different areas here are some of the main functions that it gets used for:
+        <br><br><strong style="font-size: large;">Text classification.</strong><br>This area main job is assigning tags to texts to put them in different catagories.
+        This can be useful for sentiment analysis This helps the Natural language Processing to understand sentiment or emotion behind a text/speech that is inputted.
+    <br><br><strong style="font-size: large;">Text Extraction.</strong><br>This next part allows the AI that the natural language processing gets used for to be able to read a entire book/listen to a users input and find the important pieces of information and also allow the AI to summarize any books as well.
+<br><br><strong style="font-size: large;">Machine translation.</strong><br>This next section is basically a process that the computer uses to translate text from one language,such as english, 
+to another language,such as french without human intervention it also helps the NLP to be able to swap something like english to machine language.
+<br><br><strong style="font-size: large;">Natural Language Generation</strong><br>This final bit involves using different algorithms to analyze unstructured data and automatically produce content based on that data.
+ One example of this is in language models such as GPT-3.5 and GPT-4, which are able to analyze an unstructured text and then generate believable articles to some based on the text inputted.</p>
+ <br><br>
+ <div class="container">
+    <h1>Text Summarizer</h1>
+    <p id="inputText">"Hello, hello? Uh, I wanted to record a message for you to help you get settled in on your first night. Um, I actually worked in that office before you. I'm finishing up my last week now, as a matter of fact. So, I know it can be a bit overwhelming, but I'm here to tell you there's nothing to worry about. Uh, you'll do fine. So, let's just focus on getting you through your first week. Okay?-Phone Guy (Five Nights At Freddy's)</p>
+    <button id="summarizeBtn" onclick="summarizeText()">Summarize</button>
+    <div class="output">
+        <h2>Summary:</h2>
+        <p id="summary"></p>
+    </div>
+    <div id="game-container">
+      <h1>NLP Game: Word Association</h1>
+      <p>Guess the word that is associated with the given word.</p>
+  
+      <div id="game-word"></div>
+      <input type="text" id="game-input" placeholder="Your guess">
+      <button id="game-check">Check</button>
+      <div id="game-feedback"></div>
+  </div>
+  <div id="game-container">
+    <h1>Word Scramble Game</h1>
+    <p>Unscramble the word to reveal the correct answer.</p>
+
+    <div id="game-scrambled-word2"></div>
+    <input type="text" id="game-input2" placeholder="Your guess">
+    <button id="game-check2">Check</button>
+    <div id="game-feedback2"></div>
+</div>
+
+  </div>
+<script>
+  // Game Word connections
+const gameWord = document.getElementById('game-word');
+const gameInput = document.getElementById('game-input');
+const gameFeedback = document.getElementById('game-feedback');
+
+const wordPairs = [
+    ['cat', 'dog'],
+    ['hot', 'cold'],
+    ['day', 'night'],
+    ['happy', 'sad'],
+    ['big', 'small'],
+];
+
+let currentWordIndex = 0;
+let correctWord;
+
+function nextWord() {
+    if (currentWordIndex < wordPairs.length) {
+        const [word1, word2] = wordPairs[currentWordIndex];
+        correctWord = word2;
+        gameWord.textContent = word1;
+        gameInput.value = '';
+        currentWordIndex++;
+    } else {
+        gameWord.textContent = 'Game Over!';
+        gameInput.disabled = true;
+    }
+}
+
+nextWord();
+
+const gameCheckButton = document.getElementById('game-check');
+gameCheckButton.addEventListener('click', handleCheckClick);
+
+function handleCheckClick() {
+    const userInput = gameInput.value.trim().toLowerCase();
+    if (userInput === correctWord) {
+        gameFeedback.textContent = 'Correct!';
+    } else {
+        gameFeedback.textContent = `Incorrect. The correct word is ${correctWord}`;
+    }
+
+    nextWord();
+}
+
+
+
+// Game scramble
+const gameScrambledWord = document.getElementById('game-scrambled-word2');
+const gameInput2 = document.getElementById('game-input2');
+const gameFeedback2 = document.getElementById('game-feedback2');
+
+const words = ['apple', 'banana', 'orange', 'grape', 'strawberry','html','javascript','stylingsheet','python','c-sharp','openai'];
+
+let currentWord;
+
+function nextWord2() {
+    const randomIndex = Math.floor(Math.random() * words.length);
+    currentWord = words[randomIndex];
+    const scrambledWord = currentWord.split('').sort(() => Math.random() - 0.5).join('');
+    gameScrambledWord.textContent = scrambledWord;
+    gameInput2.value = '';
+}
+
+nextWord2();
+
+const gameCheckButton2 = document.getElementById('game-check2');
+gameCheckButton2.addEventListener('click', handleCheckClick2);
+
+function handleCheckClick2() {
+    const userInput2 = gameInput2.value.trim().toLowerCase();
+    if (userInput2 === currentWord) {
+        gameFeedback2.textContent = 'Correct!';
+    } else {
+        gameFeedback2.textContent = `Incorrect. The correct word is ${currentWord}`;
+    }
+
+    nextWord2();
+}
+</script>
+
+</div>
+</body>
+<script src="../JavaScript/scriptNav.js"></script>
+<script src="../JavaScript/ScriptNLP.js"></script>
+</html>

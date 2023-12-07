@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Fundamentals</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/StyleAF.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="logo"><a href="../Index.html"><img src="Images/AI Vs Devs.PNG" alt="AI Vs Devs"></a></div>
+      <div class="menu-toggle">&#9776;</div>
+      <ul class="navigation">
+        <li><a href="index.html">website 1</a></li>
+        <li><a href="#">AI Fundamentals</a></li>
+        <li><a href="computer_vision.html">Computer Vision</a></li>
+        <li><a href="ai_models.html">How to Create AI Models</a></li>
+        <li><a href="deep_learning.html">Deep Learning</a></li>
+        <li><a href="machine_learning.html">Machine Learning</a></li>
+        <li><a href="nlp.html">Natural Language Processing</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content">
+    <h1>AI Fundamentals</h1>
+    <p>Welcome to the AI Fundamentals page. Here, we will explore the basic concepts and principles of Artificial Intelligence.</p>
+    <p>Artificial Intelligence is a branch of computer science that focuses on the creation of intelligent machines that can perform tasks requiring human intelligence. AI encompasses various subfields such as machine learning, natural language processing, computer vision, and more.</p>
+    <p>Throughout this page, we will delve into the core components of AI, its history, current applications, and potential future developments. Let's get started!</p>
+    <h2>Linear Regression Example</h2>
+    <p>Linear Regression is a fundamental AI algorithm used for predicting numerical values based on given input data. Let's create a simple example using JavaScript:</p>
+
+    <div class="linear-regression-example">
+        <label for="inputX">Enter X value:</label>
+        <input type="number" id="inputX">
+        <button onclick="predictY()">Predict Y</button>
+        <p>Result: <span id="result">---</span></p>
+    </div>
+    <div class="canvas-container">
+        <canvas id="regressionCanvas" width="400" height="300"></canvas>
+      </div>
+      <h2>Decision Tree Example</h2>
+      <p>Decision Trees are a popular AI algorithm used for classification. Let's create a simple example using JavaScript:</p>
+  
+      <div class="decision-tree-example">
+        <label for="inputFeature">Enter Feature (0 or 1):</label>
+        <input type="number" id="inputFeature" min="0" max="1">
+        <button onclick="predictClass()">Predict Class</button>
+        <p>Class: <span id="classResult">---</span></p>
+      </div>
+    </div>
+
+
+    
+</div>
+  <script src="JavaScript/script.js"></script>
+  <script src="JavaScript/ScriptAF.js"></script>
+</body>
+</html>

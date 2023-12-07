@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/StyleNav2.css">
+    <link rel="stylesheet" href="../Css//StyleAI.css">
+</head>
+<body>
+  <header class="header">
+    <a href="../../Index.html"><img src="../Images/AI Vs Devs.PNG" alt=""></a>
+    
+    <nav class="navbar">
+      <ul>
+        <li><a href="Index2.html">Website 2</a></li>
+        <li><a href="#">AI Pages &#9660;</a>
+        <ul>
+          <li class="Nava"><a href="ai_fundamentals.html">AI Fundamentals</a></li>
+          <li class="Nava"><a href="computer_vision.html">Computer Vision</a></li>
+          <li class="Nava"><a href="ai_models.html">How to Create AI Models</a></li>
+          <li class="Nava"><a href="deep_learning.html">Deep Learning</a></li>
+          <li class="Nava"><a href="machine_learning.html">Machine Learning</a></li>
+          <li class="Nava"><a href="nlp.html">Natural Language Processing</a></li>
+        </ul>
+        </li>
+      </ul>
+      <label class="switch">
+        <p class="NToggle">day and Night Toggle</p>
+        <input type="checkbox" onclick="toggleMode()">
+        <span class="slider round" id="a"></span>
+          
+      </label>
+    </nav>
+  </header>
+  <div class="content">
+    <h1>How to build an AI Model</h1><br><br>
+    <p><h2>Step 1: Problem Identification</h2>The main thing of AI models are to automate or help out if needed so you need to find out what the problem is that needs to be solved.
+      This could be anything from recognizing objects in images to predicting the price of a stock. Once you have figured out a problem you can move on to Step 2
+      <br><br><h2>Step 2: Selecting the Right Data</h2>The quality and relevance of the data you end up using will impact the accuracy of the model you make.Its also important to make sure it a large dataset but not too large as it will make the runtime extremely high.
+      Additionally you need to ensure that the data is relevant is around the problem you are trying to solve.For example if you are building a model to recognize objects in images, you would want to use a dataset of images that includes the objects you want your model to recognize.
+      <br><br><h2>Step 3: Preparing the data</h2>Once you have selected your data,the next step is to now prepare it for the use of your model.This could involve cleaning and preprocessing the data,as well as splitting it into training and testing sets.
+      <br><br><h2>Step 4: Building the Model</h2>Now that you have prepared your data, it is now time to build the model. There are many different algorithms and architectures that can be used for building an AI model, These all depend on which problems you have chosen to try and face.
+      some good options is artificial neural networks,decision trees and finally support vector machines.
+      <br><br><h2>Step 5:Training the Model</h2> Once you have built the model, it is now time to train it. Training an AI model, this initials using the training data to update the model's parameters so that it can make accurate predictions.This is normally done by using an optimization algorithm,this is such as gradient desent, 
+      that adjust the parameters to minimize the errors between the model's predictions and the actual values.
+      <br><br><h2>Step 6: Evaluating the model</h2> Once your model has been trained, it's important to evaluate its performance to see how well it is working. This can be done by comparing the model's predictions to the actual values on the testing data.
+       If the model is not performing as well as you would like, you may need to make adjustments to the model or try a different algorithm or architecture.
+    </p>
+  </div>
+</body>
+<script src="../JavaScript/scriptNav.js"></script>
+</html>

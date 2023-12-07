@@ -1,0 +1,44 @@
+/* Style the AI Fundamentals page */
+.ai-basics {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .ai-basics h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .ai-basics ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .ai-applications {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .ai-applications h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .ai-applications ul {
+    list-style: circle;
+    margin-left: 20px;
+  }
+  
+  .ai-future {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .ai-future h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  

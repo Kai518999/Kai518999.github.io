@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/StyleNav2.css">
+    <link rel="stylesheet" href="../Css/StyleDP.css">
+</head>
+<body>
+  <header class="header">
+    <a href="../../Index.html"><img src="../Images/AI Vs Devs.PNG" alt=""></a>
+    
+    <nav class="navbar">
+      <ul>
+        <li><a href="Index2.html">Website 2</a></li>
+        <li><a href="#">AI Pages &#9660;</a>
+        <ul>
+          <li class="Nava"><a href="ai_fundamentals.html">AI Fundamentals</a></li>
+          <li class="Nava"><a href="computer_vision.html">Computer Vision</a></li>
+          <li class="Nava"><a href="ai_models.html">How to Create AI Models</a></li>
+          <li class="Nava"><a href="deep_learning.html">Deep Learning</a></li>
+          <li class="Nava"><a href="machine_learning.html">Machine Learning</a></li>
+          <li class="Nava"><a href="nlp.html">Natural Language Processing</a></li>
+        </ul>
+        </li>
+      </ul>
+      <label class="switch">
+        <p class="NToggle">day and Night Toggle</p>
+        <input type="checkbox" onclick="toggleMode()">
+        <span class="slider round" id="a"></span>
+          
+      </label>
+    </nav>
+  </header>
+<div class="content">
+  <h1>Deep Learning</h1><br><br>
+  <p><h2>What is deep learning?</h2>
+    <br>
+    Deep learning is a type of machine learning and artificial intelligence that imitates the way humans gain certain types of knowledge. 
+    Deep learning models can be taught to perform classification tasks and recognize patterns in photos,text,audio and other various data.
+    <br><br>
+    <h2>Why is deep learning important?</h2><br>
+    Deep learning requires both a large amount of labeled data and computer power to work.Through being able to do this deep learning can be really useful as it can be used as a digital assistant,fraud detection and facial recognition.
+    <br><br><h2>deep learning methods</h2>
+    <br><br><strong style="font-size: large;">Learning rate Decay:</strong><br>The learning rate is a hyperparameter which is a factor that defines the system or sets conditions for its operation prior to the learning process. 
+    This controls how much change the model experiences in response to the estimated error every time the model weights are altered.Learning rates that are too hight may result in unstable training processes.
+    Learning rates that are too small may produce a lengthy training process that has the potential to get stuck.
+    <br><br><strong style="font-size: large;">Transfer learning:</strong><br>This next process involves perfecting a previously trained model,it requires an interface that the internals of a preexisting network.
+    First of all the person needs to feed the existing network new data containing previously unknown classifications.Once the network has been adjusted,new tasks can be performed with more specific categorizing abilities.
+    This method is usually used more as it requires much less data than others leading to less time taken to run.
+    <br><br><strong style="font-size: large;">Training from scratch:</strong><br>This next method requires the developer to collect a large amount of labeled data sets and configure a network architecture that can learn the features and model.
+    This technique is especially useful for new applications,as well as applications with many output categories.However overall it's a less common approach as it requires inordinate amounts of data,causing training to take days or weeks.
+    <br><br><strong style="font-size: large;">Dropout:</strong><br> This final method attempts to solve the problem of overfitting in networks with large amounts of parameters by randomly dropping the units and their connections from the neural network during training.
+    It has been proven that the Dropout method can improve the performance of neural networks on supervised learning tasks in areas such as speech recognition,document classification and computational biology.
+  </p>
+  
+</div>
+<script src="../JavaScript/scriptNav.js"></script>
+</body>
+</html>

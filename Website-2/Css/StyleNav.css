@@ -1,0 +1,244 @@
+/*Nav Bar*/
+body{
+  overflow-x: hidden;
+}
+/*Drop Down Menu*/
+.dropdown-button {
+    background-color: rgb(100, 206, 248);
+    color: black;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(233, 229, 229);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /*End Drop down menu */
+
+  /*Day N Night cycles */
+  body{
+    background-color: rgb(123, 218, 255);
+    color: black;
+  }
+  .navbar{
+    background-color: rgb(100, 206, 248);
+  }
+  .navbar-Night{
+    background-color: rgb(53, 53, 53);
+  }
+  .nava{
+    color: #000000;
+    text-decoration: none;
+    
+  }
+  .nava:hover{
+    background: #6186c5;
+    height: 40px;
+    color: #ecece6;
+  }
+  .nava2:hover{
+    background: #6186c5;
+    height: 40px;
+    color: #ecece6;
+  }
+  .nava3:hover{
+    background: #6186c5;
+    height: 40px;
+    color: #ecece6;
+  }
+  .nava-Night{
+    color: #f1f1f1;
+  }
+  .nava2{
+    color: #000000;
+    text-decoration: none;
+  }
+  .nava2-Night{
+    color: #f1f1f1;
+  }
+  .nava3{
+    color: #000000;
+    text-decoration: none;
+  }
+  .nava3-Night{
+    color: #f1f1f1;
+  }
+  .night{
+    background-color: black;
+    color: white;
+  }
+  .dropdown-button-Night{
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+.dropdown-content-Night{
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+.dropdown-content-night a{
+    color: white;
+}
+
+/*End Of Night Day Cycle*/
+
+/*Night Day Switch*/
+*{transition: 1s all;}
+input[type=checkbox] + label{
+	background-color: #2a5fba;
+	width: 150px;
+	height: 70px;
+	border-radius: 50px;
+	display: block;
+	padding: 10px;
+	box-shadow: inset 5px 5px 20px rgba(0,0,0,0.5);
+	z-index: 5;
+	position: relative;
+	top: -90px;
+    right: -1180px;
+	cursor: pointer;
+	cursor: hand;
+}
+#a{
+	width:80px;
+	height:70px;
+	border-radius:100px;
+	background-color: #e7eb10;
+	box-shadow: 0 0 100px rgb(248, 225, 97); 
+    
+}
+#c1, #c2, #c3{
+	background-color: rgba(0,0,0,0.03);
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	position: relative;
+    opacity: 0;
+}#c1{
+	top: 50px;
+	left: 20px
+}
+
+#c2{
+	top: 50px;
+	left: 40px
+}
+
+#c3{
+	top: 10px;
+	left: 40px;
+	width: 20px;
+	height: 20px;
+}
+#b1,#b1-1,#b1-2,#b2{
+    background-color: #f1f1f1;
+    border-radius: 100%;
+    position: relative;
+    width: 10px;
+    height: 10px;
+
+}
+#b1 {
+    top: -38px;
+    left: 94px;
+    width: 15px;
+}
+#b1-1{
+    top: -40px;
+    left: 92px;
+    width: 20px;
+}
+#b1-2{
+    top: -39px;
+    left: 120px;
+    width: 25px;
+}
+#b2{
+    top: -55px;
+    left: 125px;
+    width: 15px;
+}
+
+input[type=checkbox]{display: none;}
+
+input[type=checkbox] + label ~ section{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #0f1f3a;
+	z-index:-1;
+}
+
+input[type=checkbox] + label ~ section .star{
+	width: 5px;
+	height: 5px;
+	border-radius: 100%;
+	background-color: rgba(255,255,255,0.4);
+	position: absolute;
+}
+input[type=checkbox] + label ~ section .night{
+	opacity:1;
+	position: absolute;
+	top: calc(50% - 120px);
+	left: 30%;
+}
+
+input[type=checkbox] + label ~ section .day{
+	opacity:0;
+	position: absolute;
+	top: calc(50% + 90px);
+	left: calc(100% - 150px);
+}/* ----- CHECKED ----- */
+input[type=checkbox]:checked + label{
+	background-color: #2a5fba;
+}
+
+input[type=checkbox]:checked + label ~ section{
+	background-color: #568eef;
+}input[type=checkbox]:checked + label #a{
+	background-color: #ecece6;
+	margin-left: calc(100% - 80px);
+	box-shadow: 0 0 100px rgb(230, 229, 222); 
+}
+
+input[type=checkbox]:checked + label #a *{
+	opacity: 1;
+}
+input[type=checkbox]:checked + label #b *{
+	opacity: 0;
+}
+input[type=checkbox]:checked + label ~ section .night{
+	opacity:0;
+	position: absolute;
+	left: 0;
+}
+
+input[type=checkbox]:checked + label ~ section .day{
+	opacity:1;
+	position: absolute;
+	left: 60%;
+}
+
+/*Burger Menu*/
+

@@ -1,0 +1,109 @@
+/* Previous CSS code as provided in the previous answers */
+
+/* New styles for Computer Vision page */
+.content {
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 30px;
+  }
+  
+  h1 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+  }
+  
+  p {
+    line-height: 1.8;
+    color: #444;
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+    /* Previous media query as provided in the previous answers */
+  
+    /* Adjust content padding for mobile */
+    .content {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  }
+  
+  /* Previous CSS code as provided in the previous answers */
+
+/* New styles for the Image Recognition section */
+.image-recognition {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  img {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  #result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Previous CSS code as provided in the previous answers */
+
+/* New styles for the Linear Regression example */
+.linear-regression-example {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  #result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
